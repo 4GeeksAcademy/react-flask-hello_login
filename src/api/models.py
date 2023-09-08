@@ -15,7 +15,7 @@ class User(db.Model):
     # Notice that each column is also a normal Python instance attribute.
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(250), nullable=False)
-    lastname =db.Column(db.String(250), nullable=False)
+    lastname = db.Column(db.String(250), nullable=False)
     email = db.Column(db.String(250), nullable=False)
     password = db.Column(db.String(250), nullable=False)
 
@@ -39,7 +39,7 @@ class People(db.Model):
     # Notice that each column is also a normal Python instance attribute.
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(250), nullable=False)
-    hair_color =db.Column(db.String(250), nullable=False)
+    hair_color = db.Column(db.String(250), nullable=False)
     eye_color = db.Column(db.String(250), nullable=False)
 
     favs = db.relationship("Favorites")
